@@ -71,6 +71,8 @@ swift:
     swift_password: REPLACEME
     swift_tenant_name: REPLACEME
     swift_region_name: REPLACEME
+    swift_endpoint_type: publicURL
+
 
 # This flavor stores the images in Glance (to integrate with openstack)
 # See also: https://github.com/dotcloud/openstack-docker

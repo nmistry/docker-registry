@@ -20,7 +20,8 @@ class SwiftStorage(Storage):
             auth_version=config.get('swift_auth_version', 2),
             os_options={
                 'tenant_name': config.get('swift_tenant_name'),
-                'region_name': config.get('swift_region_name')
+                'region_name': config.get('swift_region_name'),
+                'endpoint_type': config.get('swift_endpoint_type') or 'publicURL'
             })
 
     def _init_path(self, path=None):
